@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account - ShopEasy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">ShopEasy</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="policy.html">Policy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Account</h1>
+    
+    <section class="account-info">
+      <h2>Personal Information</h2>
+      <form id="update-info-form">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" value="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="johndoe@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" value="123-456-7890">
+        </div>
+        <button type="submit" class="btn">Update Information</button>
+      </form>
+    </section>
+
+    <section class="password-change">
+      <h2>Change Password</h2>
+      <form id="change-password-form">
+        <div class="form-group">
+          <label for="current-password">Current Password:</label>
+          <input type="password" id="current-password" name="current-password" required>
+        </div>
+        <div class="form-group">
+          <label for="new-password">New Password:</label>
+          <input type="password" id="new-password" name="new-password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm New Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit" class="btn">Change Password</button>
+      </form>
+    </section>
+
+    <section class="order-history">
+      <h2>Order History</h2>
+      <div class="order">
+        <p><strong>Order #12345</strong> - Placed on: 12 Dec 2024</p>
+        <p>Status: Delivered</p>
+        <button class="btn">View Details</button>
+      </div>
+      <div class="order">
+        <p><strong>Order #12344</strong> - Placed on: 01 Dec 2024</p>
+        <p>Status: In Progress</p>
+        <button class="btn">View Details</button>
+      </div>
+      <!-- Add more orders as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 ShopEasy. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

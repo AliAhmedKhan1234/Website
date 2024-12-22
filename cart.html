@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - ShopEasy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">ShopEasy</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="policy.html">Policy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Your Cart</h1>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="https://via.placeholder.com/100" alt="Product 1">
+        <div class="item-details">
+          <p class="item-name">Product 1</p>
+          <p class="item-price">1000/- Pkr</p>
+          <input type="number" class="item-quantity" value="1" min="1">
+        </div>
+        <button class="remove-item">Remove</button>
+      </div>
+      <div class="cart-item">
+        <img src="https://via.placeholder.com/100" alt="Product 2">
+        <div class="item-details">
+          <p class="item-name">Product 2</p>
+          <p class="item-price">1500/- Pkr</p>
+          <input type="number" class="item-quantity" value="1" min="1">
+        </div>
+        <button class="remove-item">Remove</button>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+
+    <div class="cart-summary">
+      <p><strong>Total Price: </strong><span id="total-price">2500/- Pkr</span></p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 ShopEasy. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
